@@ -16,7 +16,8 @@
       <div class="jumbotron text-center">
         <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="background-colorblack; border: none; color: white;">Scrape New Data
+        </a></p>
       </div>
 
       <!-- Add section for Mars News -->
@@ -46,12 +47,66 @@
         </div>
 
         <div class="col-md-4">
+          <div class="clearfix visible-xs-block"></div>
           <!-- Mars Facts -->
-          <div class="row" id="mars-facts">
-            <h4>Mars Facts</h4>
-            {{ mars.facts | safe }}
+          <div class="col-md-4">
+              <div class="row" id="mars-facts">
+                  <h3 style="color: white">Mars Facts</h3>
+                      <div class="table-responsive">
+                          <!--<table class="dataframe table bordeless" style="background-color: black; color: navajowhite;">{{mars.facts | safe}}</table>-->
+                          <table border="1" class="dataframe table">
+                              <thead>
+                                <tr style="text-align: right;">
+                                  <th></th>
+                                  <th style="color: white;">Mars</th>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Description</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th style="color: white;">Equatorial Diameter:</th>
+                                  <td style="color: navajowhite;">6,792 km</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Polar Diameter:</th>
+                                  <td style="color: navajowhite;">6,752 km</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Mass:</th>
+                                  <td style="color: navajowhite;">6.39 × 10^23 kg (0.11 Earths)</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Moons:</th>
+                                  <td style="color: navajowhite;">2 (Phobos &amp; Deimos)</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Orbit Distance:</th>
+                                  <td style="color: navajowhite;">227,943,824 km (1.38 AU)</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Orbit Period:</th>
+                                  <td style="color: navajowhite;">687 days (1.9 years)</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Surface Temperature:</th>
+                                  <td style="color: navajowhite;">-87 to -5 °C</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">First Record:</th>
+                                  <td style="color: navajowhite;">2nd millennium BC</td>
+                                </tr>
+                                <tr>
+                                  <th style="color: white;">Recorded By:</th>
+                                  <td style="color: navajowhite;">Egyptian astronomers</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                      </div>
+              </div>
           </div>
-        </div>
       </div>
 
       <!-- Section for Mars Hemispheres -->
@@ -72,5 +127,9 @@
         {% endfor %}
       </div>
     </div>
+  
+</body>
+</html>
+
   </body>
 </html>
