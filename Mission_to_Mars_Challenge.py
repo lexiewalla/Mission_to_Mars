@@ -13,8 +13,9 @@ browser = Browser('chrome', **executable_path, headless=False)
 
 # ### Visit the NASA Mars News Site
 
-# Visit the mars nasa news site
-url = 'https://redplanetscience.com/'
+
+# Visit the nasa mars news site
+url = 'https://mars.nasa.gov/news/'
 browser.visit(url)
 
 # Optional delay for loading the page
